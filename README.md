@@ -1,4 +1,3 @@
-
 # 🎵 Cava Visualizer for Quickshell
 
 Hiển thị sóng nhạc động ngay trên desktop (ở lớp `Bottom`) sử dụng **CAVA** kết hợp **Quickshell (QML)** — nhẹ, đẹp và mượt mà.
@@ -8,16 +7,12 @@ Hiển thị sóng nhạc động ngay trên desktop (ở lớp `Bottom`) sử d
 ## ⚙️ Cài đặt
 
 ### 🐧 Arch Linux / Manjaro
+
 ```bash
 sudo pacman -S cava
 yay -S quickshell-git
 # hoặc
 paru -S quickshell-git
-```
-
-### 🧱 Ubuntu / Debian
-```bash
-sudo apt install cava
 ```
 
 > ⚠️ Quickshell hiện chưa có gói chính thức trên Ubuntu — bạn có thể tự build từ mã nguồn.
@@ -26,7 +21,7 @@ sudo apt install cava
 
 ## 🧠 Cấu hình CAVA
 
-Không cần tạo file `~/.config/cava/config`.  
+Không cần tạo file `~/.config/cava/config`.
 Toàn bộ cấu hình được truyền trực tiếp qua `stdin` trong mã:
 
 ```ini
@@ -52,11 +47,26 @@ Nếu muốn tùy chỉnh hoặc thử nghiệm, bạn vẫn có thể tạo th�
 
 ## 🚀 Khởi chạy Visualizer
 
-Chạy shell của bạn bằng lệnh:
+### Cách 1 — Chạy trực tiếp bằng `quickshell`
+
 ```bash
 quickshell shell.qml
 ```
 
-Visualizer sẽ tự động khởi động sau khi shell load, hiển thị hiệu ứng sóng nhạc ở dưới cùng màn hình (phía sau ứng dụng và cửa sổ).
+### Cách 2 — Sử dụng lệnh `qs -p`
 
----
+Nếu bạn đã cài `qs` (trình quản lý profile của Quickshell), bạn có thể chạy trực tiếp từ thư mục dự án:
+
+```bash
+qs -p đường-dẫn/qs-cava
+```
+
+Ví dụ:
+
+```bash
+qs -p ~/Projects/qs-cava
+```
+
+Lệnh này sẽ tự động mở shell `shell.qml` trong thư mục đó.
+
+Visualizer sẽ hiển thị sóng nhạc ở dưới cùng màn hình, phía sau các ứng dụng và cửa sổ khác.
