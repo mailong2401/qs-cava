@@ -19,32 +19,6 @@ paru -S quickshell-git
 
 ---
 
-## 🧠 Cấu hình CAVA
-
-Không cần tạo file `~/.config/cava/config`.
-Toàn bộ cấu hình được truyền trực tiếp qua `stdin` trong mã:
-
-```ini
-[general]
-framerate=25
-bars=64
-autosens=1
-
-[smoothing]
-noise_reduction=50
-
-[output]
-method=raw
-raw_target=/dev/stdout
-data_format=ascii
-ascii_max_range=100
-bit_format=8bit
-```
-
-Nếu muốn tùy chỉnh hoặc thử nghiệm, bạn vẫn có thể tạo thủ công file cấu hình này trong thư mục `~/.config/cava/`.
-
----
-
 ## 🚀 Khởi chạy Visualizer
 
 ### Cách 1 — Chạy trực tiếp bằng `quickshell`
