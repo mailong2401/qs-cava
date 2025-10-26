@@ -12,50 +12,55 @@ Singleton {
     
     // Catppuccin Macchiato Color Palette
     property var catppuccin: ({
-    "rosewater": "#ffd1dc",  // sáng hơn, hồng kem
-    "flamingo": "#f9a5ac",   // đỏ cam sáng
-    "pink": "#ffb3f4",       // hồng sáng
-    "mauve": "#caa9ff",      // tím hoa cà đậm
-    "red": "#ff6b6b",        // đỏ neon
-    "maroon": "#f08484",     // đỏ đất hồng
-    "peach": "#ffb380",      // cam đào sáng
-    "yellow": "#ffe97f",     // vàng pastel
-    "green": "#9fffa9",      // xanh lá sáng
-    "teal": "#7fffe0",       // xanh ngọc sáng
-    "sky": "#7fd9ff",        // xanh da trời
-    "sapphire": "#67b7ff",   // xanh lam đậm hơn
-    "blue": "#6b8fff",       // xanh dương rực
-    "lavender": "#a99fff",   // tím nhạt
-    "text": "#dce3ff",       // chữ sáng
-    "subtext1": "#bfc6e8",
-    "subtext0": "#9fa6c0",
-    "overlay2": "#8a91b0",
-    "overlay1": "#757ca0",
-    "overlay0": "#62678a",
-    "surface2": "#4e526e",
-    "surface1": "#3e4157",
-    "surface0": "#2c2e42",
-    "base": "#1f2130",       // nền hơi xanh xám
-    "mantle": "#1a1b28",
-    "crust": "#141520"
-})
+      "c1": "#8E51FF",
+      "c2" : "#615FFF",
+      "c3" : "#2B7FFF",
+      "c4" : "#34A6F4",
+      "c5" : "#3BB8DB",
+      "c6" : "#34A6F4",
+      "c7" : "#37BC7D",
+      "c8" : "#31C950",
+      "c9" : "#7CCF35",
+      "c10": "#F0B13B",
+      "c11" : "#FE9A37",
+      "c12" : "#FF692A",
+      "c13" : "#FB2C36"
+    })
 
 
     property var gradientColors: [
-        catppuccin.sapphire,    // Xanh lạnh
-        catppuccin.blue,        // Xanh dương
-        catppuccin.sky,         // Xanh da trời
-        catppuccin.teal,        // Xanh ngọc
-        catppuccin.lavender,    // Tím oải hương
-        catppuccin.mauve,       // Tím hoa cà
-        catppuccin.green,       // Xanh lá (trung tính)
-        catppuccin.yellow,      // Vàng (bắt đầu ấm)
-        catppuccin.peach,       // Cam đào
-        catppuccin.maroon,      // Hồng đất
-        catppuccin.red,         // Đỏ
-        catppuccin.pink,        // Hồng
-        catppuccin.flamingo,    // Hồng flamingo
-        catppuccin.rosewater    // Hồng nhạt ấm
+        catppuccin.c1,
+        catppuccin.c1,
+        catppuccin.c2,
+        catppuccin.c2,
+        catppuccin.c3,
+        catppuccin.c3,
+        catppuccin.c4,
+        catppuccin.c5,
+        catppuccin.c6,
+        catppuccin.c7,
+        catppuccin.c8,
+        catppuccin.c9,
+        catppuccin.c10,
+        catppuccin.c11,
+        catppuccin.c12,
+        catppuccin.c13,
+        catppuccin.c13,
+        catppuccin.c12,
+        catppuccin.c11,
+        catppuccin.c10,
+        catppuccin.c9,
+        catppuccin.c8,
+        catppuccin.c7,
+        catppuccin.c6,
+        catppuccin.c5,
+        catppuccin.c4,
+        catppuccin.c3,
+        catppuccin.c3,
+        catppuccin.c2,
+        catppuccin.c2,
+        catppuccin.c1,
+        catppuccin.c1,
     ]
 
     Component.onCompleted: {
